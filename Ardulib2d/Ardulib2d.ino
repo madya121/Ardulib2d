@@ -3,7 +3,11 @@
 #include"Camera.h"
 #include"RectShape.h"
 
+#include"Arduboy2D.h"
+
 Arduboy2 arduboy;
+
+Arduboy2D engine = Arduboy2D();
 
 Camera camera = Camera();
 RectShape rect = RectShape(60, 28, 8, 8, WHITE);

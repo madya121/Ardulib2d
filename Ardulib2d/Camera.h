@@ -5,17 +5,10 @@
 
 class Camera : public Base {
   public:
-    Camera() : Base(), isSnapped(false) {}
-    Camera(const Vector2 &vector) : Base(vector), isSnapped(false) {}
+    Camera() : Base() {}
+    Camera(const Vector2 &vector) : Base(vector) {}
     
     Vector2 worldToScreenPosition(const Vector2 &vector);
-    
-    void snap(const Base &snap);
-    void releaseSnap();
-
-  protected:
-    Base snapObject;
-    bool isSnapped;
 };
 
 #endif
